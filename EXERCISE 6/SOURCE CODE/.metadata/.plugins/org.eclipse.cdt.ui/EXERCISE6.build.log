@@ -1,0 +1,22 @@
+21:46:11 **** Incremental Build of configuration Debug for project EXERCISE6 ****
+make -j8 all 
+arm-none-eabi-gcc -o "EXERCISE6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Admin\Desktop\VXL\HK231\LAB1\EXERCISE 6\SOURCE CODE\EXERCISE6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EXERCISE6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: EXERCISE6.elf
+ 
+arm-none-eabi-size   EXERCISE6.elf 
+arm-none-eabi-objdump -h -S  EXERCISE6.elf  > "EXERCISE6.list"
+arm-none-eabi-objcopy  -O ihex  EXERCISE6.elf  "EXERCISE6.hex"
+   text	   data	    bss	    dec	    hex	filename
+   6304	     20	   1572	   7896	   1ed8	EXERCISE6.elf
+arm-none-eabi-objcopy  -O binary  EXERCISE6.elf  "EXERCISE6.bin"
+Finished building: default.size.stdout
+ 
+Finished building: EXERCISE6.hex
+Finished building: EXERCISE6.bin
+ 
+Finished building: EXERCISE6.list
+ 
+ 
+
+21:46:11 Build Finished. 0 errors, 0 warnings. (took 450ms)
+

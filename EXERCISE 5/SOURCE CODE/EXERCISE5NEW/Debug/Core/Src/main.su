@@ -1,0 +1,8 @@
+main.c:89:8:display7SEG_1	16	static
+main.c:64:5:main	40	static
+main.c:125:8:display7SEG_2	16	static
+main.c:168:6:turnonTrafficLight	16	static
+main.c:172:6:turnoffTrafficLight	16	static
+main.c:260:6:SystemClock_Config	72	static
+main.c:296:13:MX_GPIO_Init	32	static
+main.c:346:6:Error_Handler	4	static,ignoring_inline_asm
